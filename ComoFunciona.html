@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traductor de Lenguaje de Señas</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h1>IncluSign</h1>
+
+      <div class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="C:\Users\QUANTA NL5\Documents\Html\IncluSign.html">Inicio</a></li>
+            <li><a href="C:\Users\QUANTA NL5\Documents\Html\Acerca.html">Acerca</a></li>
+            <li><a href="C:\Users\QUANTA NL5\Documents\Html\ComoFunciona.html">Cómo Funciona</a></li>
+            <li><a href="C:\Users\QUANTA NL5\Documents\Html\Contacto.html">Contacto</a></li>
+          </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+
+    <section id="funciona" class="seccion">
+      <h2>¿Cómo Funciona?</h2>
+      <p>Nuestro programa utiliza una cámara web para captar los movimientos de las manos en tiempo real,
+         permitiendo traducir el lenguaje de señas al abecedario..</p>
+
+        <picture>
+            <source srcset="imagenes/Mediapipe.png" media="(min-width: 720px)" />
+            <img src="imagenes/Mediapipe.png" alt="MDN" />
+          </picture>
+
+          <p>Para lograr esto, empleamos las potentes librerías de MediaPipe y OpenCV,
+             que nos permiten identificar hasta 20 puntos clave en cada mano y analizar su movimiento con precisión.</p>          
+          
+             <picture>
+                <source srcset="imagenes/MediapipeandCV.png" media="(min-width: 720px)" />
+                <img src="imagenes/MediapipeandCV.png" alt="MDN" />
+              </picture>
+
+
+              <p>El reconocimiento de las señas se realiza a través de una base de datos propia, 
+                construida por nuestro equipo, donde recopilamos y clasificamos imágenes y videos de cada letra del 
+                abecedario en lenguaje de señas. Esta base nos permite identificar la letra que el usuario está 
+                señalando y mostrarla en pantalla.</p> 
+
+
+
+
+
+
+
+      <a href="http://127.0.0.1:5000/" class="btn">Probar Traductor</a>
+    </section>
+
+
+  <footer>
+    <p>Todos los derechos reservados © IncluSign.</p>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const sidebar = document.getElementById('sidebar');
+
+    let menuOpen = false;
+
+    menuToggle.addEventListener('click', () => {
+      sidebar.classList.toggle('active');
+      menuOpen = !menuOpen;
+    });
+  </script>
+</body>
+
+</html>

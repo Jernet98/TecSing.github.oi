@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traductor de Lenguaje de Señas</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h1>IncluSign</h1>
+
+      <div class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="C:\Users\QUANTA NL5\Documents\Html\IncluSign.html">Inicio</a></li>
+            <li><a href="C:\Users\QUANTA NL5\Documents\Html\Acerca.html">Acerca</a></li>
+            <li><a href="C:\Users\QUANTA NL5\Documents\Html\ComoFunciona.html">Cómo Funciona</a></li>
+            <li><a href="C:\Users\QUANTA NL5\Documents\Html\Contacto.html">Contacto</a></li>
+          </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+
+    <section id="acerca" class="seccion">
+      <h2>Acerca del Proyecto</h2>
+      <p>Este traductor fue creado con el fin de ayudar a todas las personas que no pueden comunicarse, buscando
+        facilitar la comunicación entre personas sordas y oyentes.</p>
+    </section>
+
+
+  <footer>
+    <p>Todos los derechos reservados © IncluSign.</p>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const sidebar = document.getElementById('sidebar');
+
+    let menuOpen = false;
+
+    menuToggle.addEventListener('click', () => {
+      sidebar.classList.toggle('active');
+      menuOpen = !menuOpen;
+    });
+  </script>
+</body>
+
+</html>
